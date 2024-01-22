@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+.cabeca{
+    background-color: rgb(155, 155, 224);
+    color: white;
+    width: 100%;
+    height: 90px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+li{
+    margin:  1rem ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+*/
+
+/* Estilos gerais do header */
+header.cabeca {
+    background-color: #333; /* Cor de fundo do header */
+    padding: 10px; /* Espaçamento interno do header */
+}
+
+/* Estilos para a navegação (menu) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para o logo e perfil */
+.logo img,
+.perfil img {
+    border-radius: 50%; /* Bordas arredondadas para imagens */
+}
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .logo img,
+    .perfil img {
+        width: 30px; /* Ajuste o tamanho das imagens para dispositivos móveis */
+        height: 30px;
+    }
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin: 20px; /* Margem geral para o conteúdo principal */
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.imagem img {
+    max-width: 100%; /* Imagem responsiva para ajustar-se ao tamanho da tela */
+}
+
+footer.rodape {
+    background-color: #333; /* Cor de fundo do footer */
+    color: white; /* Cor do texto do footer */
+    padding: 10px; /* Espaçamento interno do footer */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    footer.rodape {
+        font-size: 14px; /* Tamanho de fonte menor para dispositivos móveis */
+    }
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin: 20px; /* Margem geral para o conteúdo principal */
+}
+
+/* Estilos para a seção de conteúdo */
+.conteudo {
+    text-align: center;
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+    padding: 20px; /* Espaçamento interno da seção */
+    border-radius: 10px; /* Borda arredondada da seção */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra da seção */
+}
+
+.conteudo header {
+    font-size: 24px; /* Tamanho da fonte do cabeçalho */
+    color: #333; /* Cor do texto do cabeçalho */
+}
+
+.conteudo hr {
+    margin: 15px 0; /* Espaçamento em torno da linha horizontal */
+    border: 1px solid #ddd; /* Cor da linha horizontal */
+}
+
+.conteudo p {
+    font-size: 16px; /* Tamanho da fonte do parágrafo */
+    color: #666; /* Cor do texto do parágrafo */
+}
+
+/* Estilos para a seção de imagem */
+.imagem {
+    margin-top: 20px; /* Espaçamento superior da seção de imagem */
+    text-align: center;
+}
+
+.imagem img {
+    max-width: 100%; /* Imagem responsiva para ajustar-se ao tamanho da tela */
+    border-radius: 5px; /* Borda arredondada da imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra da imagem */
+}
+
+/* Quadro*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.product input {
+    margin-bottom: 5px;
+}
+
+#addProductBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
